@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+body {
+    color: #044916;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem;
+    background-color: #fff;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/*WEBSITE HEADER*/
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    background-color: #044916;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top:0;
+    color: white;
+    }
+
+.header-img {
+    display: flex;
+    padding: 0 0 0 20px;
+}
+
+.header-img h1 {
+    line-height: 50px;
+    margin: 10px;
+    
+}
+
+.header-img h1 a:hover {
+    color: tomato;
+    
+}
+
+.header-img img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+
+
+#nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    line-height: 80px;
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    padding: 0px 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;  
+}
+
+#nav-bar ul li a:hover {
+     color:coral;
+  
+}
+
+
+/*MAIN HOME*/
+.home {
+    display: flex;
+    position: relative
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin:0;
+}
+.home-div {
+    display:block;
+    /*margin-top: 20px;*/
+    padding-top: 100px;
+    text-align: center;
+}
+
+.home-div .nested {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 30px 60px;
+    } 
+    
+.nested > div> p {
+    margin:15px;
+    align-items: center;
+    }
+    
+.home-div button {
+    margin: 20px 0;
+    padding: 10px 30px;
+    background-color: coral;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.home-div button a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-div h1{
+    margin-top: 0px;
+    color: #044916;
+
+}
+
+.home-div h3{
+    margin: 0;
+    padding: 30px 0 30px 0;
+}
+
+
+/*PLANS*/
+
+.plans {
+    display: flex;
+    color: #044916;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.plans > div {
+    background-color: transparent;
+    margin: 10px;
+    padding: 0 15px;
+}
+
+.plans-h3 {
+    text-align: center;
+    margin:0;
+}
+.plans h3 {
+    text-align: center;
+
+}
+
+.plans button  {
+    display: block;
+    background-color:  coral;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.plans button a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*FORM*/
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  #contact-us h3 {
+      font-weight: 600;
+      margin-bottom: 0;
+  }
+
+.email-form {
+    background-color: transparent;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 8px;
+    border: 1px solid #044916;
+}
+
+.form-group input {
+    margin: 10px 0;
+    width: 90%;  
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+#email {
+    background-color: rgb(245, 212, 200);
+
+}
+
+::placeholder {
+    color:#044916;
+
+}
+#submit {
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+
+/*VIDEO*/
+
+#video {
+    margin: 0;
+  
+}
+
+/*FOOTER*/
+
+#main-footer {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: #044916;
+    font-weight: 600;
+    /*background-color*/
+    max-width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0;
+}
+
+
+.footer-payment p {
+    margin-bottom: 0;
+    line-height: 2rem;
+}
+
+
+.footer-payment i {
+    font-size: 40px;
+    color: tomato;
+    padding: 0 5px;
+ }
+
+ .footer-rights p {
+     margin: 0;
+ }
+
+
+
+/*media screen*/
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    #home {
+      flex-direction: column;
+      line-height: 2.5rem;
+      margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .plans {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact-us {
+      flex-direction: column;
+         }
+}
+    
+        
